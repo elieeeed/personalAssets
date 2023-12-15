@@ -15,6 +15,7 @@ double total_net_worth(const std::vector<std::unique_ptr<PersonalAsset>>& assets
 
 std::string trim(const std::string& str) {
     auto start = str.find_first_not_of(" \t\n\r");
+    //use trim for end and first
     if (start == std::string::npos) {
         return "";
     }
